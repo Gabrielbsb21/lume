@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: lume-api
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/lume}
+    username: ${DB_USER:lume}
+    password: ${DB_PASSWORD:lume}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+springdoc:
+  api-docs:
+    path: /openapi
+  swagger-ui:
+    path: /docs
