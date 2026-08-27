@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.idea/
+.vscode/
+*.iml
+.pnpm-store/
+
+# Local reports and test artifacts
+playwright-report/
+test-results/

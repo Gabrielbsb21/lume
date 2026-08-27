@@ -1,0 +1,32 @@
+:host {
+  display: block;
+  min-height: 100dvh;
+}
+
+.app-bar {
+  gap: 1rem;
+  border-bottom: 1px solid var(--mat-sys-outline-variant);
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.tagline {
+  color: var(--mat-sys-on-surface-variant);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+main {
+  width: min(72rem, calc(100% - 2rem));
+  margin-inline: auto;
+  padding-block: clamp(3rem, 8vw, 7rem);
+}
+
+@media (max-width: 36rem) {
+  .tagline {
+    display: none;
+  }
+}

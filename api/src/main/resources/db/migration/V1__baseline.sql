@@ -1,0 +1,1 @@
+-- Establishes Flyway ownership of the schema before business tables are introduced.
