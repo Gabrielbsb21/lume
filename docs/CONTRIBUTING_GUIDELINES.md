@@ -19,8 +19,10 @@ microservices without a clear business need.
 Branch names must follow Conventional Commits semantics:
 
 ```text
-codex/<type>/<short-kebab-case-description>
+<type>/<short-kebab-case-description>
 ```
+
+Do not add an agent or tool prefix such as `codex/` to branch names.
 
 Use one of the standard types: `feat`, `fix`, `docs`, `style`, `refactor`,
 `perf`, `test`, `build`, `ci`, `chore`, or `revert`.
@@ -34,6 +36,6 @@ Commit messages must use the following format:
 Example:
 
 ```text
-branch: codex/chore/update-project-dependencies
+branch: chore/update-project-dependencies
 commit: chore(deps): update project dependencies
 ```
