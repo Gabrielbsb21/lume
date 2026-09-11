@@ -17,7 +17,7 @@ The backend is organized by business module and the frontend by feature. See the
 ## Prerequisites
 
 - Java 25
-- Node.js 24 and pnpm 11
+- Node.js 24.20 and pnpm 11.26
 - Docker with Docker Compose
 
 ## Local development
